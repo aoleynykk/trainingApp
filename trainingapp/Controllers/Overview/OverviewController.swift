@@ -9,36 +9,52 @@ import UIKit
 
 class OverviewController: BaseController {
     
-    private let workoutButton = CustomButton()
-
+    private let overviewBar = CustomOverviewBar()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Resourses.Overview.title
     }
+    
 }
 
 @objc extension OverviewController {
     
     override func addViews() {
         super.addViews()
-        view.addSubview(workoutButton)
+        view.addView(overviewBar)
     }
     
     override func layoutViews() {
         super.layoutViews()
-        let workoutButtonConstraints = [
-            workoutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            workoutButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            workoutButton.widthAnchor.constraint(equalToConstant: 130),
-            workoutButton.heightAnchor.constraint(equalToConstant: 28)
+        
+        let overviewBarConstraints = [
+            overviewBar.topAnchor.constraint(equalTo: view.topAnchor),
+            overviewBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            overviewBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ]
         
-        NSLayoutConstraint.activate(workoutButtonConstraints)
+        NSLayoutConstraint.activate(overviewBarConstraints)
     }
     
     override func setup() {
         super.setup()
-        workoutButton.translatesAutoresizingMaskIntoConstraints = false
+        navigationController?.navigationBar.isHidden = true
+        
+        overviewBar.addWorkoutAction(#selector(customWorkoutButtonPressed), with: self)
+        overviewBar.addAdditingAction(#selector(addButtonPressed), with: self)
+        
+        
+    }
+}
+
+extension OverviewController {
+    
+    @objc func customWorkoutButtonPressed() {
+        print("custom button pressed")
     }
     
+    @objc func addButtonPressed() {
+        print("add button pressed")
+    }
 }

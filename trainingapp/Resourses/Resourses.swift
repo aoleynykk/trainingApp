@@ -11,8 +11,9 @@ import UIKit
 enum Resourses {
     
     enum Overview {
-        static var title = "Overview"
+        static var title = "Today"
         static var customButtonTitle = "All Workouts"
+        static var addButtonImage = UIImage(systemName: "plus.circle.fill")
     }
     
     enum Progress {

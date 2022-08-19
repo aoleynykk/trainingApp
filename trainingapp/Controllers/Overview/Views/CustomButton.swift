@@ -34,8 +34,8 @@ class CustomButton: UIButton {
 extension CustomButton {
     
     func addViews() {
-        addSubview(label)
-        addSubview(buttonImage)
+        addView(label)
+        addView(buttonImage)
     }
     func layoutViews() {
         let buttonImageConstraints = [
@@ -61,14 +61,12 @@ extension CustomButton {
         layer.cornerRadius = 14
         addFlashing(self)
         
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Resourses.Colors.selectedColor
         label.font = Resourses.Fonts.font(size: 15)
         label.textAlignment = .center
         
         label.text = Resourses.Overview.customButtonTitle
         
-        buttonImage.translatesAutoresizingMaskIntoConstraints = false
         buttonImage.image = Resourses.Images.Overview.customButtonImage?.withRenderingMode(.alwaysTemplate)
         buttonImage.tintColor = Resourses.Colors.selectedColor
        
