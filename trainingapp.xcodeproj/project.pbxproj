@@ -25,6 +25,9 @@
 		11B69C4C28ABB92B00FE8AFE /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B69C4B28ABB92B00FE8AFE /* UIColor + ext.swift */; };
 		11B69C4F28ABBDE300FE8AFE /* Resourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B69C4E28ABBDE300FE8AFE /* Resourses.swift */; };
 		11B69C5128ABC97200FE8AFE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B69C5028ABC97100FE8AFE /* NavigationController.swift */; };
+		11EFB0D228B7631E005DF4FF /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EFB0D128B7631E005DF4FF /* Date + ext.swift */; };
+		11FE096128B22BD3001D0226 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE096028B22BD3001D0226 /* WeekView.swift */; };
+		11FE096428B22E33001D0226 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE096328B22E33001D0226 /* WeekDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		11B69C4B28ABB92B00FE8AFE /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		11B69C4E28ABBDE300FE8AFE /* Resourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourses.swift; sourceTree = "<group>"; };
 		11B69C5028ABC97100FE8AFE /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		11EFB0D128B7631E005DF4FF /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
+		11FE096028B22BD3001D0226 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		11FE096328B22E33001D0226 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		113FD55628AD030F008E09EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				11FE096228B22E18001D0226 /* Week Group */,
 				113FD55728AD0347008E09EA /* CustomButton.swift */,
 				11977CC228AE6AE5009C92E6 /* CustomOverviewBar.swift */,
 			);
@@ -150,6 +157,7 @@
 			children = (
 				11B69C4B28ABB92B00FE8AFE /* UIColor + ext.swift */,
 				1191215028ABD04600AB4494 /* UIView + ext.swift */,
+				11EFB0D128B7631E005DF4FF /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +181,15 @@
 				1191215228ABD2B400AB4494 /* Base */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11FE096228B22E18001D0226 /* Week Group */ = {
+			isa = PBXGroup;
+			children = (
+				11FE096028B22BD3001D0226 /* WeekView.swift */,
+				11FE096328B22E33001D0226 /* WeekDayView.swift */,
+			);
+			path = "Week Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,12 +268,15 @@
 				11977CC328AE6AE5009C92E6 /* CustomOverviewBar.swift in Sources */,
 				1191215128ABD04600AB4494 /* UIView + ext.swift in Sources */,
 				113FD55828AD0347008E09EA /* CustomButton.swift in Sources */,
+				11EFB0D228B7631E005DF4FF /* Date + ext.swift in Sources */,
+				11FE096128B22BD3001D0226 /* WeekView.swift in Sources */,
 				11B69C4928ABB8BC00FE8AFE /* TabBarController.swift in Sources */,
 				11B69C3528ABB79D00FE8AFE /* AppDelegate.swift in Sources */,
 				11B69C4C28ABB92B00FE8AFE /* UIColor + ext.swift in Sources */,
 				11B69C3728ABB79D00FE8AFE /* SceneDelegate.swift in Sources */,
 				11B69C5128ABC97200FE8AFE /* NavigationController.swift in Sources */,
 				1191215C28ABD32500AB4494 /* ProgressController.swift in Sources */,
+				11FE096428B22E33001D0226 /* WeekDayView.swift in Sources */,
 				1191214F28ABCF2F00AB4494 /* BaseController.swift in Sources */,
 				1191215828ABD30200AB4494 /* OverviewController.swift in Sources */,
 				11B69C4F28ABBDE300FE8AFE /* Resourses.swift in Sources */,

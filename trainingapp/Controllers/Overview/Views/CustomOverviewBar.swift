@@ -16,11 +16,7 @@ class CustomOverviewBar: BaseView {
     
     private let addButton = UIButton()
     
-    private let weekView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .blue
-        return view
-    }()
+    private let weekView = WeekView()
     
     override func layoutSubviews() {
         super.layoutSubviews()

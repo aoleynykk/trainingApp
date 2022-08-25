@@ -1,9 +1,4 @@
-//
-//  UIColor + ext.swift
-//  trainingapp
-//
-//  Created by Олександр Олійник on 16.08.2022.
-//
+
 
 import Foundation
 import UIKit
